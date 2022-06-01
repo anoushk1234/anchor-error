@@ -1,22 +1,27 @@
 # This example requires the 'message_content' privileged intents
 
 import os
-import discord
-from discord.ext import commands
+import disnake
+from disnake.ext import commands
 
 
-intents = discord.Intents.default()
-intents.message_content = True
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.InteractionBot()
+
+
+@bot.slash_command()
+async def ping(inter):
+    await inter.response.send_message("Pong!")
 
 
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}")
 
+
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send("pong")
+
 
 @bot.command()
 async def hello(ctx):
