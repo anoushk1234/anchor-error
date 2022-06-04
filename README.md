@@ -15,7 +15,7 @@ This example starts a Discord bot using [discord.py](https://discordpy.readthedo
 
 ## ✨ Features
 
-- use /hex <hex-code>
+- `use /hex <hex-code>`
 
 ## 💁‍♀️ How to use
 
