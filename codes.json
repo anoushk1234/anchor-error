@@ -1,1 +1,137 @@
-{"0x64": {"code": " 100 ", "error": " InstructionMissing ", "message": "8 byte instruction identifier not provided "}, "0x65": {"code": " 101 ", "error": "  InstructionFallbackNotFound ", "message": "Fallback functions are not supported "}, "0x66": {"code": " 102 ", "error": "  InstructionDidNotDeserialize ", "message": "The program could not deserialize the given instruction "}, "0x67": {"code": " 103 ", "error": "  InstructionDidNotSerialize ", "message": "The program could not serialize the given instruction "}, "0x78": {"code": " 120 ", "error": "  IdlInstructionStub ", "message": "The program was compiled without idl instructions "}, "0x79": {"code": " 121 ", "error": "  IdlInstructionInvalidProgram ", "message": "The transaction was given an invalid program for the IDL instruction "}, "0x8c": {"code": " 140 ", "error": "  ConstraintMut ", "message": "  A mut constraint was violated  "}, "0x8d": {"code": " 141 ", "error": "  ConstraintBelongsTo ", "message": "  A belongs_to constraint was violated  "}, "0x8e": {"code": " 142 ", "error": "  ConstraintSigner ", "message": "  A signer constraint was violated  "}, "0x8f": {"code": " 143 ", "error": "  ConstraintRaw ", "message": "  A raw constraint as violated  "}, "0x90": {"code": " 144 ", "error": "  ConstraintOwner ", "message": "  An owner constraint was violated  "}, "0x91": {"code": " 145 ", "error": "  ConstraintRentExempt ", "message": "  A rent exempt constraint was violated  "}, "0x92": {"code": " 146 ", "error": "  ConstraintSeeds ", "message": "  A seeds constraint was violated  "}, "0x93": {"code": " 147 ", "error": "  ConstraintExecutable ", "message": "  An executable constraint was violated  "}, "0x94": {"code": " 148 ", "error": "  ConstraintState ", "message": "  A state constraint was violated  "}, "0x95": {"code": " 149 ", "error": "  ConstraintAssociated ", "message": "  An associated constraint was violated  "}, "0x96": {"code": " 150 ", "error": "  ConstraintAssociatedInit ", "message": "An associated init constraint was violated "}, "0xa0": {"code": " 160 ", "error": "  AccountDiscriminatorAlreadySet ", "message": "The account discriminator was already set on this account "}, "0xa1": {"code": " 161 ", "error": "  AccountDiscriminatorNotFound ", "message": "No 8 byte discriminator was found on the account "}, "0xa2": {"code": " 162 ", "error": "  AccountDiscriminatorMismatch ", "message": "8 byte discriminator did not match what was expected "}, "0xa3": {"code": " 163 ", "error": "  AccountDidNotDeserialize ", "message": "  Failed to deserialize the account  "}, "0xa4": {"code": " 164 ", "error": "  AccountDidNotSerialize ", "message": "  Failed to serialize the account  "}, "0xa5": {"code": " 165 ", "error": "  AccountNotEnoughKeys ", "message": "Not enough account keys given to the instruction "}, "0xa6": {"code": " 166 ", "error": "  AccountNotMutable ", "message": "  The given account is not mutable  "}, "0xa7": {"code": " 167 ", "error": "  AccountNotProgramOwned ", "message": "The given account is not owned by the executing program "}, "0xb4": {"code": " 180 ", "error": "  StateInvalidAddress ", "message": "The given state account does not have the correct address "}, "0x12b": {"code": " 299 ", "error": "  Deprecated ", "message": "The API being used is deprecated and should no longer be used "}}
+{
+  "0x64": {
+    "code": " 100 ",
+    "error": " InstructionMissing ",
+    "message": "8 byte instruction identifier not provided "
+  },
+  "0x65": {
+    "code": " 101 ",
+    "error": "  InstructionFallbackNotFound ",
+    "message": "Fallback functions are not supported "
+  },
+  "0x66": {
+    "code": " 102 ",
+    "error": "  InstructionDidNotDeserialize ",
+    "message": "The program could not deserialize the given instruction "
+  },
+  "0x67": {
+    "code": " 103 ",
+    "error": "  InstructionDidNotSerialize ",
+    "message": "The program could not serialize the given instruction "
+  },
+  "0x78": {
+    "code": " 120 ",
+    "error": "  IdlInstructionStub ",
+    "message": "The program was compiled without idl instructions "
+  },
+  "0x79": {
+    "code": " 121 ",
+    "error": "  IdlInstructionInvalidProgram ",
+    "message": "The transaction was given an invalid program for the IDL instruction "
+  },
+  "0x8c": {
+    "code": " 140 ",
+    "error": "  ConstraintMut ",
+    "message": "  A mut constraint was violated  "
+  },
+  "0x8d": {
+    "code": " 141 ",
+    "error": "  ConstraintBelongsTo ",
+    "message": "  A belongs_to constraint was violated  "
+  },
+  "0x8e": {
+    "code": " 142 ",
+    "error": "  ConstraintSigner ",
+    "message": "  A signer constraint was violated  "
+  },
+  "0x8f": {
+    "code": " 143 ",
+    "error": "  ConstraintRaw ",
+    "message": "  A raw constraint as violated  "
+  },
+  "0x90": {
+    "code": " 144 ",
+    "error": "  ConstraintOwner ",
+    "message": "  An owner constraint was violated  "
+  },
+  "0x91": {
+    "code": " 145 ",
+    "error": "  ConstraintRentExempt ",
+    "message": "  A rent exempt constraint was violated  "
+  },
+  "0x92": {
+    "code": " 146 ",
+    "error": "  ConstraintSeeds ",
+    "message": "  A seeds constraint was violated  "
+  },
+  "0x93": {
+    "code": " 147 ",
+    "error": "  ConstraintExecutable ",
+    "message": "  An executable constraint was violated  "
+  },
+  "0x94": {
+    "code": " 148 ",
+    "error": "  ConstraintState ",
+    "message": "  A state constraint was violated  "
+  },
+  "0x95": {
+    "code": " 149 ",
+    "error": "  ConstraintAssociated ",
+    "message": "  An associated constraint was violated  "
+  },
+  "0x96": {
+    "code": " 150 ",
+    "error": "  ConstraintAssociatedInit ",
+    "message": "An associated init constraint was violated "
+  },
+  "0xa0": {
+    "code": " 160 ",
+    "error": "  AccountDiscriminatorAlreadySet ",
+    "message": "The account discriminator was already set on this account "
+  },
+  "0xa1": {
+    "code": " 161 ",
+    "error": "  AccountDiscriminatorNotFound ",
+    "message": "No 8 byte discriminator was found on the account "
+  },
+  "0xa2": {
+    "code": " 162 ",
+    "error": "  AccountDiscriminatorMismatch ",
+    "message": "8 byte discriminator did not match what was expected "
+  },
+  "0xa3": {
+    "code": " 163 ",
+    "error": "  AccountDidNotDeserialize ",
+    "message": "  Failed to deserialize the account  "
+  },
+  "0xa4": {
+    "code": " 164 ",
+    "error": "  AccountDidNotSerialize ",
+    "message": "  Failed to serialize the account  "
+  },
+  "0xa5": {
+    "code": " 165 ",
+    "error": "  AccountNotEnoughKeys ",
+    "message": "Not enough account keys given to the instruction "
+  },
+  "0xa6": {
+    "code": " 166 ",
+    "error": "  AccountNotMutable ",
+    "message": "  The given account is not mutable  "
+  },
+  "0xa7": {
+    "code": " 167 ",
+    "error": "  AccountNotProgramOwned ",
+    "message": "The given account is not owned by the executing program "
+  },
+  "0xb4": {
+    "code": " 180 ",
+    "error": "  StateInvalidAddress ",
+    "message": "The given state account does not have the correct address "
+  },
+  "0x12b": {
+    "code": " 299 ",
+    "error": "  Deprecated ",
+    "message": "The API being used is deprecated and should no longer be used "
+  }
+}
